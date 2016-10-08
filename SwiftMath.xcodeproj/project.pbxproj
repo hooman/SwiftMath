@@ -30,7 +30,6 @@
 		OBJ_11 /* Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percentage.swift; sourceTree = "<group>"; };
 		OBJ_12 /* RationalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RationalNumber.swift; sourceTree = "<group>"; };
 		OBJ_15 /* SwiftMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMathTests.swift; sourceTree = "<group>"; };
-		OBJ_16 /* SwiftMath.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SwiftMath.xcworkspace; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* SwiftMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_19 /* SwiftMathTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -88,7 +87,6 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
-				OBJ_16 /* SwiftMath.xcworkspace */,
 				OBJ_17 /* Products */,
 			);
 			sourceTree = "<group>";
