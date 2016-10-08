@@ -316,16 +316,6 @@ extension Rational {
     }
     
     
-    
-    /// Convert from a Double.
-    ///
-    
-    public init(_ x: Double, tolerance: Percentage = 0.01%, preferredDenominators: [Int] = [] ) {
-
-        self.init(x, tolerance: x*tolerance, preferredDenominators: preferredDenominators)
-    }
-    
-    
     public static func +(lhs: Rational, rhs: Rational) -> Rational {
         
         let (lnum, rnum, denom) = numsWithCommonDenom(lhs, rhs)
@@ -396,39 +386,6 @@ internal func numsWithCommonDenom(_ left: Rational, _ right: Rational) -> (lnum:
 }
 
 
-extension String {
-    
-    func mapped(with lookupTable: [Character:Character]) -> String {
-        
-        return String(self.characters.map{ lookupTable[$0] ?? $0 })
-    }
-}
-
-
-
-/// Utility protocol to help write more readable code.
-///
-/// One alternative is overloading multiplication / division operators, but it would
-/// pollute operator space and lead to ambiguity.
-
-internal protocol Scalable {
-    
-    associatedtype ScaleFactor
-    
-    /// Returns a new item by scaling the current item.
-    
-    func scaled(by factor: ScaleFactor) -> Self
-}
-
-extension Int: Scalable {
-    
-    typealias ScaleFactor = Double
-    
-    func scaled(by factor: Double) -> Int {
-        
-        return Int((Double(self) * factor).rounded())
-    }
-}
 
 extension Rational: Scalable {
     
@@ -439,3 +396,4 @@ extension Rational: Scalable {
         return Rational(numerator.scaled(by: factor), over: denominator)
     }
 }
+

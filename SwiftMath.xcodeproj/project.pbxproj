@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		861B50B41DA97DF100C6F0B1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B50B31DA97DF100C6F0B1 /* Utilities.swift */; };
 		OBJ_25 /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Algorithms.swift */; };
 		OBJ_26 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Operators.swift */; };
 		OBJ_27 /* Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Percentage.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		861B50B31DA97DF100C6F0B1 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percentage.swift; sourceTree = "<group>"; };
 		OBJ_12 /* RationalNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RationalNumber.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				OBJ_10 /* Operators.swift */,
 				OBJ_11 /* Percentage.swift */,
 				OBJ_12 /* RationalNumber.swift */,
+				861B50B31DA97DF100C6F0B1 /* Utilities.swift */,
 			);
 			name = SwiftMath;
 			path = Sources;
@@ -181,6 +184,7 @@
 				OBJ_25 /* Algorithms.swift in Sources */,
 				OBJ_26 /* Operators.swift in Sources */,
 				OBJ_27 /* Percentage.swift in Sources */,
+				861B50B41DA97DF100C6F0B1 /* Utilities.swift in Sources */,
 				OBJ_28 /* RationalNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
