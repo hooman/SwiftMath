@@ -7,6 +7,9 @@
 //
 
 
+//MARK: New Operators
+
+
 /// Tolerance infix operator
 
 infix operator ± : BitwiseShiftPrecedence
@@ -45,8 +48,8 @@ public postfix func %(lhs: Int) -> Percentage { return Percentage(lhs) }
 
 // (Double, Percentage) -> Double
 
-public func +(lhs: Double, rhs: Percentage) -> Double { return lhs + lhs * rhs.value }
-public func -(lhs: Double, rhs: Percentage) -> Double { return lhs - lhs * rhs.value }
+public func +(lhs: Double, rhs: Percentage) -> Double { return lhs + abs(lhs) * rhs.value }
+public func -(lhs: Double, rhs: Percentage) -> Double { return lhs - abs(lhs) * rhs.value }
 public func *(lhs: Double, rhs: Percentage) -> Double { return lhs * rhs.value }
 public func /(lhs: Double, rhs: Percentage) -> Double { return lhs / rhs.value }
 
