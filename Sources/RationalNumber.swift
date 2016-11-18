@@ -237,7 +237,7 @@ extension Rational {
     /// of the binary floating point representation will be performed, which may not be what you want. 
     ///
     /// You may pass a list of preferred denominators to try first before falling back to smallest 
-    /// denominator algoorithm.
+    /// denominator algorithm.
     ///
     /// - Parameter x: A Double value to convert to rational.
     ///
@@ -393,7 +393,16 @@ extension Rational: Scalable {
     
     func scaled(by factor: Double) -> Rational {
         
-        return Rational(numerator.scaled(by: factor), over: denominator)
+        // To improve accuracy, always scale up:
+        
+        if factor > 1.0 {
+            
+            return Rational(numerator.scaled(by: factor), over: denominator)
+            
+        } else {
+            
+            return Rational(numerator, over: denominator.scaled(by: 1.0/factor))
+        }
     }
 }
 
